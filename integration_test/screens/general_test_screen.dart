@@ -12,4 +12,5 @@ class GeneralTestScreen {
    /// Кнопка Далее.
    final Finder nextBtn =
    find.descendant(of: find.byType(NextButton), matching: find.byType(ElevatedButton));
+
 }

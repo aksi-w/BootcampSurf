@@ -29,7 +29,7 @@ class FieldWithSuggestionsWidget
   Widget build(IFieldWithSuggestionsWidgetModel wm) {
     return CompositedTransformTarget(
       link: wm.optionsLayerLink,
-      child: TextFormField(
+      child:TextFormField(
         controller: wm.controller,
         focusNode: focusNode,
         validator: validator,

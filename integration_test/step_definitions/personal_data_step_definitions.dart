@@ -7,17 +7,33 @@ import '../test_screen_library.dart';
 final personalDataStepDefinitions = [
   testerWhen<FlutterWidgetTesterWorld>(
     RegExp(r'Я указываю фамилию$'),
-    (context, tester) async {
+        (context, tester) async {
       await tester.implicitEnterText(
-          personalDataTestScreen.surnameField, 'Rogers');
+          personalDataTestScreen.surnameField, 'Popova');
     },
   ),
   testerWhen<FlutterWidgetTesterWorld>(
-    RegExp(r'Я указываю дату рождения$'),
-    (context, tester) async {
-      final calendar =
-          tester.widget<TextFormField>(personalDataTestScreen.dateOfBirthField);
-      calendar.controller?.text = '04.07.1980';
+    RegExp(r'Я указываю имя$'),
+        (context, tester) async {
+      await tester.implicitEnterText(
+          personalDataTestScreen.nameField, 'Polina');
     },
   ),
+  testerWhen<FlutterWidgetTesterWorld>(
+    RegExp(r'Я указываю отчество$'),
+        (context, tester) async {
+      await tester.implicitEnterText(
+          personalDataTestScreen.secondNameField, 'Nikolaevna');
+    },
+  ),
+
+  testerWhen<FlutterWidgetTesterWorld>(
+    RegExp(r'Я указываю дату рождения$'),
+        (context, tester) async {
+      final calendar =
+      tester.widget<TextFormField>(personalDataTestScreen.dateOfBirthField);
+      calendar.controller?.text = '2004-08-03';
+    },
+  ),
+
 ];

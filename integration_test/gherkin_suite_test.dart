@@ -7,6 +7,8 @@ import 'package:surf_logger/surf_logger.dart';
 
 import 'step_definitions/main_step_definitions.dart';
 import 'step_definitions/personal_data_step_definitions.dart';
+import 'test_screen_library.dart';
+import 'step_definitions/PlaceOfResidence_step_definitions.dart';
 
 part 'gherkin_suite_test.g.dart';
 
@@ -35,6 +37,7 @@ void main() {
       stepDefinitions: [
         ...personalDataStepDefinitions,
         ...mainStepDefinitions,
+
       ],
     ),
     appMainFunction: (world) => app.run(),
