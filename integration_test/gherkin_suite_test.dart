@@ -35,8 +35,10 @@ void main() {
         JsonReporter(writeReport: (_, __) => Future<void>.value()),
       ],
       stepDefinitions: [
+        ...placeOfResidenceStepDefinitions,
         ...personalDataStepDefinitions,
         ...mainStepDefinitions,
+
 
       ],
     ),

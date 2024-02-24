@@ -8,4 +8,4 @@ import 'screens/placeOfResidence_test_screen.dart';
 final generalTestScreen = GeneralTestScreen();
 final mainTestScreen = MainTestScreen();
 final personalDataTestScreen = PersonalDataTestScreen();
-final placeOfResidence = PlaceOfResidence();
+final placeOfResidenceScreen = PlaceOfResidenceScreen();

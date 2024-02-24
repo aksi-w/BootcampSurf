@@ -18,7 +18,15 @@ final mainStepDefinitions = [
         (context, tester) async {
       await tester.pumpUntilVisible(personalDataTestScreen.trait);
       await tester.implicitTap(generalTestScreen.nextBtn);
-      await tester.pumpUntilVisible(placeOfResidence.trait);
+      await tester.pumpUntilVisible(placeOfResidenceScreen.trait);
+    },
+  ),
+  testerWhen<FlutterWidgetTesterWorld>(
+    RegExp(r'Я перехожу далее$'),
+        (context, tester) async {
+      await tester.pumpUntilVisible(placeOfResidenceScreen.trait);
+      await tester.implicitTap(generalTestScreen.nextBtn);
+      await tester.pumpUntilVisible(placeOfResidenceScreen.trait);
     },
   ),
 ];
