@@ -127,7 +127,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
               bool skip,
             ) async {
               return await runStep(
-                name: 'И Я перехожу далее',
+                name: 'И Я перехожу далее к интересам',
                 multiLineStrings: <String>[],
                 table: null,
                 dependencies: dependencies,
@@ -151,7 +151,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
               bool skip,
             ) async {
               return await runStep(
-                name: 'И Я перехожу далее',
+                name: 'И Я перехожу далее информации о себе',
                 multiLineStrings: <String>[],
                 table: null,
                 dependencies: dependencies,

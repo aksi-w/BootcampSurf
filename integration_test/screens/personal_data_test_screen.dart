@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:profile/assets/strings/personal_data_screen_strings.dart';
 import 'package:profile/assets/strings/test_keys.dart';

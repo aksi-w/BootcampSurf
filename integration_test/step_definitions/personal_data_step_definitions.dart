@@ -35,5 +35,13 @@ final personalDataStepDefinitions = [
       calendar.controller?.text = '2004-08-03';
     },
   ),
+  testerWhen<FlutterWidgetTesterWorld>(
+    RegExp(r'Я перехожу далее$'),
+        (context, tester) async {
+      await tester.pumpUntilVisible(personalDataTestScreen.trait);
+      await tester.implicitTap(generalTestScreen.nextBtn);
+      await tester.pumpUntilVisible(placeOfResidenceScreen.trait);
+    },
+  ),
 
 ];

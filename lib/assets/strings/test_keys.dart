@@ -6,4 +6,7 @@ abstract class TestKeys {
   ///Поле выбора города
   static const placeOfResidenceField = ValueKey('PlaceOfResidenceField');
 
+  ///Поле выбора интересов
+  static const interestsFields = ValueKey('interestsFields');
+
 }
